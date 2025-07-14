@@ -1,6 +1,5 @@
-import {useState, useEffect} from 'react'
 
-function home(){
+function Home(){
     return <div>Home</div>
 }
 
