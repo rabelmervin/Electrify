@@ -1,0 +1,16 @@
+
+.navbar {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    padding: 15px 40px;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}

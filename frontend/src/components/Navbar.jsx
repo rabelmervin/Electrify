@@ -6,6 +6,7 @@ const Navbar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     return (
         <nav className= "navbar">
+            <div className="logo"></div>
             <ul className= "nav-links">
                 <li><Link to= "/">ElectrifAI</Link></li>
                 <li><Link to= "/">Products</Link></li>

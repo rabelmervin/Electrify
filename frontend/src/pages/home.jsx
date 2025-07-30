@@ -1,12 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-
+import Herosection from '../components/Herosection';
 const Home = () => {
     return (
         <div>
             <Navbar />
                 <main>
-                    <h1></h1>
+                    <Herosection />
+                    <Trusted />
+                    <ValueProps />
                 </main>
         </div>
     )

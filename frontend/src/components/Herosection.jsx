@@ -1,8 +1,9 @@
-import react from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination} from "swiper/modeules";
-import "swiper/css"
-import "swiper/css/pagination"
+import { Autoplay, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Herosection = () => {
     const slides = [
@@ -18,8 +19,17 @@ const Herosection = () => {
                 loop= {true}
                 className="hero-swiper"
         >
+            {slides.map((text, index) => (
+                <SwiperSlide key={index}>
+                  <div className="hero-content">
+                    <h1>{text}</h1>
+                  </div>
+                  </SwiperSlide>
+            ))}
                   </Swiper>
     </div>
     )
 
 }
+
+export default Herosection;
