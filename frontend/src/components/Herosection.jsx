@@ -7,6 +7,9 @@ import "swiper/css/pagination";
 
 const Herosection = () => {
     const slides = [
+                "Welcome to Electrify!",
+        "Empower your business with our solutions.",
+        "Join us and innovate today."
 
     ]
     return (

@@ -14,3 +14,23 @@
   display: flex;
   gap: 30px;
 }
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-right button {
+  background-color: azure;
+  color: #0f1f3d;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
