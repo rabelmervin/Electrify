@@ -12,13 +12,26 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+   gap: 2.5rem;
+}
+
+.navbar-left{
+   display: flex;
+  padding-left: 200px;
+    gap: 30px;
+}
+
+.navbar-left a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
 }
 
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  list-style: none;
 }
 
 .navbar-right button {
@@ -33,4 +46,15 @@
 
 .nav-links li {
   cursor: pointer;
+}
+
+ .navbar-right a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-right a:hover,
+.nav-links li a:hover {
+  color: #60a5fa;
 }

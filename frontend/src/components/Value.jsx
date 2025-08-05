@@ -3,15 +3,15 @@ import "../styles/Value.css"
 
 const ValueProps = () => {
     return (
-        <section className="value-props">
-        <h2> Electrify your business with Our
+        <section className="value-">
+        <h2 className="value-props"> Services that electrify your business 
         </h2>
         <div className="value-box">
         <div className="value-item">
-        <p> Hosting services</p>
+        <p> Ai/Ml</p>
         </div>
         <div className="value-item">
-        <p>Cloud services</p>
+        <p>Cloud </p>
         </div>
         <div className="value-item">
         <p> software development</p>

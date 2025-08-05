@@ -1,4 +1,13 @@
 .trusted-section{
-    
+    background-color: #0f1f3d;
+    color: white;
+    width: 100vw;
+      margin-left: calc(-50vw + 50%); 
 
+}
+
+.trusted-text {
+    align-items: center;
+    font-size: 1.8rem;
+     text-align: center;  
 }
