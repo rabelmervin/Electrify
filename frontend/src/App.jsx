@@ -1,8 +1,8 @@
 import react from "react"
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
-import Login from "./pages/Login"
+import login from "./pages/login"
 import Register from "./pages/register"
-import Home from "./pages/Home"
+import Home from "./pages/home"
 import ProtectedRoute from "./components/ProtectedRoute"
 
 function Logout() {
@@ -19,8 +19,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<home />} />
+        <Route path="/login" element={<login />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/register" element={<RegisterAndLogout />} />
       </Routes>
