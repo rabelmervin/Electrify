@@ -1,0 +1,5 @@
+build:
+  command: cargo build --target wasm32-wasip2 --release && mkdir -p ../build && cp ../target/wasm32-wasip2/release/invoice_renderer.wasm ../build/
+  component_path: ../build/invoice_renderer.wasm
+wit:
+  wit_dir: ../wit

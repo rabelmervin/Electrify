@@ -1,0 +1,9 @@
+name = "order-processor"
+version = "0.1.0"
+language = "rust"
+type = "component"
+
+[component]
+wasm_target = "wasm32-wasip1"
+wit_project_dir = "../wit"
+destination = "../build/order_processor.wasm"

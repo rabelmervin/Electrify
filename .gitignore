@@ -1,0 +1,3 @@
+/target
+wasm_components/target/
+wasm_components/build/wash

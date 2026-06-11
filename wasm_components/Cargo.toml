@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "order_processor",
+    "invoice_renderer",
+]
+resolver = "2"

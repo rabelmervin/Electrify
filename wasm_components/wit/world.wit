@@ -1,0 +1,41 @@
+package demo:invoice;
+
+interface types {
+    record order-item {
+        name: string,
+        price: f32,
+        quantity: u32,
+    }
+
+    record order {
+        customer-name: string,
+        items: list<order-item>,
+        discount-percent: f32,
+    }
+
+    record invoice-data {
+        customer-name: string,
+        subtotal: f32,
+        tax: f32,
+        discount: f32,
+        total: f32,
+    }
+}
+
+interface renderer {
+    use types.{invoice-data};
+
+    render-pdf: func(data: invoice-data) -> list<u8>;
+}
+
+world invoice-renderer {
+    export renderer;
+}
+
+world order-processor {
+    use types.{order};
+    import renderer;
+
+    export wasi:http/incoming-handler@0.2.0;
+    export process-order: func(input: order) -> result<list<u8>, string>;
+}

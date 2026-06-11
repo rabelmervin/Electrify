@@ -1,0 +1,22 @@
+apiVersion: runtime.wasmcloud.dev/v1alpha1
+kind: WorkloadDeployment
+metadata:
+  name: electrify
+  namespace: electrify
+spec:
+  replicas: 1
+  template:
+    spec:
+      hostInterfaces:
+        - namespace: wasi
+          package: http
+          interfaces:
+            - incoming-handler
+          config:
+            # public dns alias for 127.0.0.1
+            host: electrify.localhost.direct
+      components:
+        - name: order-processor
+          image: localhost:5005/electrify/order-processor:latest
+        - name: invoice-renderer
+          image: localhost:5005/electrify/invoice-renderer:latest
